@@ -1,0 +1,192 @@
+/* Fonte personalizada estilo medieval */
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url('../assets/img/dark-leather-texture.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #f5f5dc;
+}
+
+/* Textura leve por cima da textura de couro */
+.background-texture {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/dark-leather-texture.webp');
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Container principal */
+.grimorio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-image: url('../assets/img/parchment-texture.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid #6b4226;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Cabeçalho */
+.grimorio-header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.grimorio-header p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* Seção de conteúdo */
+.grimorio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Entrada de dados */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #8b5a2b;
+    border-radius: 5px;
+    background-color: #f5f5dc;
+    color: #333;
+}
+
+/* Botão */
+.magic-button {
+    padding: 12px;
+    background-color: #6b4226;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'MedievalSharp', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.magic-button:hover {
+    background-color: #8b5a2b;
+}
+
+.button-icon {
+    font-size: 1.2rem;
+}
+
+/* Resultado */
+/*.result-section {
+    margin-top: 20px;
+    text-align: center;
+}*/
+
+.result-section {
+    margin-top: 20px;
+    /* text-align: center; /* Remova ou comente esta linha, pois usaremos flexbox */
+    display: flex; /* Torna-o um container flex */
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente (no eixo transversal) */
+    justify-content: center; /* Centraliza os itens verticalmente (no eixo principal, se houver espaço extra) */
+    gap: 15px; /* Adiciona um espaço entre a mensagem e o ícone */
+}
+
+/* Dentro de .rank-icon em main.css */
+.rank-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* Garante que a imagem se comporte como bloco e o margin:auto dela funcione se necessário */
+    object-fit: contain; /* Garante que a imagem se encaixe sem cortar ou esticar */
+}
+.message-box {
+    padding: 20px;
+    /*background-image: url('../assets/img/parchment-texture.png');*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #8b5a2b;
+    border-radius: 8px;
+    min-height: 100px;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+/* Ícone do rank */
+.rank-icon {
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rodapé */
+.grimorio-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .grimorio-container {
+        padding: 20px 15px;
+    }
+
+    .grimorio-header h1 {
+        font-size: 2rem;
+    }
+
+    .magic-button {
+        font-size: 1rem;
+    }
+/*Ícone do Ranking */
+    .rank-icon {
+        margin-top: 15px;
+        width: 120px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
+
+/* Imagens em estilo pixel art */
+img.pixel-art,
+.pixel-art {
+    image-rendering: pixelated;
+}
+
